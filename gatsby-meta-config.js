@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['문제를 찾고', '정의하고', '해결하는'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      thumbnail: 'mimo.gif', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/jsk3342`,
