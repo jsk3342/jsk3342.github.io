@@ -55,20 +55,6 @@ export const pageQuery = graphql`
               appStore
             }
           }
-
-          projects {
-            title
-            description
-            techStack
-            thumbnailUrl
-            links {
-              post
-              github
-              demo
-              googlePlay
-              appStore
-            }
-          }
         }
       }
     }
