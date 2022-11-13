@@ -15,6 +15,7 @@ categories: design
 2. 어떤 디자인 시스템을 구축하는게 좋을까?
    1. 필요한 디자인 컴포넌트 나열 (checkbox 던 뭐던, color token까지 개발할지?)
 3. UI 라이브러리를 개발하기위해서는 어떤 개발 방법론이 있는가?
+
    1. - headless ui
 
       1. 왜 headless 컴포넌트로 트랜드가 넘어가게 되었을까? 진심으로 이해하기
@@ -36,6 +37,7 @@ categories: design
       ```
 
    3. stateful component & stateless component
+
 4. UI 라이브러리를 배포하고 사용하기 위해서는 어떻게 해야할까?
    1. npm registry
    2. npm registry deploy
