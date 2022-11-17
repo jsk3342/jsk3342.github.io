@@ -17,3 +17,17 @@ const arr3 = Array.from(new Array(4), (v, k) => {
     return k + 1
 })
 ```
+
+# 객체
+
+```
+const obj = new Object();
+const obj1 = {};
+
+```
+
+# 연결 리스트
+
+```
+
+```
