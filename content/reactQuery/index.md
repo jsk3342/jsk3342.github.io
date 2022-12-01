@@ -31,3 +31,9 @@ React Query로 전환한 이유
 Redux와 Redux-Saga를 사용할 때는 Success, Failure 값을 useEffect의 deps로 전달해서 처리해야 하는 과정이 필요했었는데, 이 과정을 onSuccess와 onError로 간단하게 처리할 수 있었습니다.
 
 React Query 외에도, RTK-Query, SWR 등이 있지만, React Query에 비해 오프라인 처리, 쿼리의 select와 같은 기능들이 부족하다고 판단하여 React Query로 전환하였습니다.
+
+useQuery
+데이터를 get 하기 위한 api입니다. post, update는 useMutation을 사용합니다.
+첫번째 파라미터로 unique Key가 들어가고, 두번째 파라미터로 비동기 함수(api호출 함수)가 들어갑니다. (당연한 말이지만 두번째 파라미터는 promise가 들어가야합니다.)
+첫번째 파라미터로 설정한 unique Key는 다른 컴포넌트에서도 해당 키를 사용하면 호출 가능합니다. unique Key는 string과 배열을 받습니다. 배열로 넘기면 0번 값은 string값으로 다른 컴포넌트에서 부를 값이 들어가고 두번째 값을 넣으면 query 함수 내부에 파라미터로 해당 값이 전달됩니다.
+return 값은 api의 성공, 실패여부, api return 값을 포함한 객체입니다.
